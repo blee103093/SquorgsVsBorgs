@@ -11,8 +11,6 @@ public class Bullet : MonoBehaviour
 
     public ParticleSystem deathParticles;
     public Score playerScore;
-    //public Player playerScore;
-
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +36,6 @@ public class Bullet : MonoBehaviour
         {
             Destroy(other.gameObject);
             Instantiate(deathParticles, transform.position, Quaternion.identity);
-            
             playerScore.AddScore(10);
             Destroy(gameObject);
 
