@@ -69,6 +69,8 @@
     <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\PlayAgain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />

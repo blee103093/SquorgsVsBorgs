@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bullet : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class Bullet : MonoBehaviour
     public float maxDistance;
 
     public ParticleSystem deathParticles;
-
+    public Score playerScore;
+    //public Player playerScore;
 
 
     // Start is called before the first frame update
@@ -24,7 +26,7 @@ public class Bullet : MonoBehaviour
         transform.Translate(transform.forward * Time.deltaTime * speed);
         maxDistance += 1 * Time.deltaTime;
 
-        if(maxDistance >= 5)
+        if(maxDistance >= 3)
         {
             Destroy(this.gameObject);
         }
@@ -36,9 +38,11 @@ public class Bullet : MonoBehaviour
         {
             Destroy(other.gameObject);
             Instantiate(deathParticles, transform.position, Quaternion.identity);
+            
+            playerScore.AddScore(10);
             Destroy(gameObject);
+
         }
     }
-    
-    
+     
 }

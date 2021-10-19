@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2545047612476263317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.4, y: 0.705, z: 36.604}
-  m_LocalScale: {x: 0.09600234, y: 0.09600234, z: 0.19429915}
+  m_LocalScale: {x: 0.32434276, y: 0.32434276, z: 0.65643734}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -111,3 +111,4 @@ MonoBehaviour:
   speed: 7
   maxDistance: 0
   deathParticles: {fileID: 5257717211570855006, guid: 866625b890dac814eaff0b213dae721f, type: 3}
+  playerScore: {fileID: 0}

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,14 +22,19 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-
+    //public int score;
+    //public Text ScoreText;
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        // If currentHealth = 0, end game
+        if(currentHealth <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
-
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +83,8 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Shoot();
+            
+         
             gunAudio.Play();
         }
 
@@ -83,9 +92,7 @@ public class Player : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(bullet.transform, bulletSpawnPoint.transform.position, playerObj.transform.rotation);
-
-        
+        Instantiate(bullet.transform, bulletSpawnPoint.transform.position, playerObj.transform.rotation);  
     }
 
 
@@ -95,10 +102,7 @@ public class Player : MonoBehaviour
         {
             // Enemy damages player
             TakeDamage(20);
-        }
-    }
 
-    private void Die()
-    {
+        }
     }
 }

@@ -37,12 +37,5 @@ public class GameManager : MonoBehaviour
 
 
 
-    void SpawnEnemy()
-    {
-       // Vector3 spawnPosition = new Vector3(Random.Range(-spawnPoints.x, spawnPoints.x), spawnPoints.y, spawnPoints.z);
-        //Instantiate(EnemyPrefab, spawnPoints[0].transform.position, Quaternion.identity);
 
-
-
-    }
 }
