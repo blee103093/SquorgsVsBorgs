@@ -30,13 +30,13 @@ public class Bullet : MonoBehaviour
         }
     }
     
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Enemy")
         {
+            //playerScore.AddScore(10);
             Destroy(other.gameObject);
             Instantiate(deathParticles, transform.position, Quaternion.identity);
-            playerScore.AddScore(10);
             Destroy(gameObject);
 
         }

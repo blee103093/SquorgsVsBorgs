@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
             xPos = Random.Range(1, 4);
             zPos = Random.Range(1, 56);
             Instantiate(EnemyPrefab, new Vector3(xPos, 2, zPos), Quaternion.identity);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.5f);
             enemyCount += 1; 
         }
     }

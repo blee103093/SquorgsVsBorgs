@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    // ATTACH AUDIO TO THIS??
-
     private AudioSource gunAudio;
 
     public float movementSpeed;
@@ -22,8 +20,6 @@ public class Player : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-    //public int score;
-    //public Text ScoreText;
 
     public void TakeDamage(int damage)
     {
@@ -34,6 +30,7 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+
     }
 
     // Start is called before the first frame update

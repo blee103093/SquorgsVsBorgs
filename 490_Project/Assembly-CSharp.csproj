@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\TakeablePowerUp.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\Camera.cs" />
@@ -61,17 +62,22 @@
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
     <Compile Include="Assets\Scripts\EnemyChase.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\CustomizablePowerUp.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpManager.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\Utility\Singleton.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\PowerUpRotation.cs" />
     <Compile Include="Assets\Stellar Sky\Demo\CameraController.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBar.cs" />
-    <Compile Include="Assets\Scripts\ClickToMove.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\PlayAgain.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
+    <Compile Include="Assets\PowerUp\Scripts\ScaleParticles.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
     <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PowerUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />

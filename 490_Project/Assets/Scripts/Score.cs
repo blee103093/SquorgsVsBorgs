@@ -18,7 +18,10 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.P))
+        {
+            AddScore(10);
+        }
     }
 
     public void AddScore(int addedScore)

@@ -53,16 +53,7 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\WaypointManagerWindow.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\Autorun.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\SetupAssistant_Menu.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\AIManager_Editor.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\AIController_Editor.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\SimpleAIController_Menu.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\TileGridGenerator.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\StartupWindow.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\AddModifierWindow.cs" />
-    <Compile Include="Assets\Candice AI for Games\Scripts\Editor\WaypointEditor.cs" />
+    <Compile Include="Assets\LightningBolt\Editor\LightningBoltEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
